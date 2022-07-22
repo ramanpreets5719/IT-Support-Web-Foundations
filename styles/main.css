@@ -1,0 +1,247 @@
+* {
+	margin: 0;				/*margin*/
+	padding: 0;				/*padding*/
+}
+
+body  {					
+	background-image: url("../images/berry.jpg");			/*Background image */
+	font-family: Verdana, Arial, Helvetica, sans-serif;		/*font family*/
+	font-size: 100%;										/*Font size*/
+}
+
+div#frame {
+	margin: 25px auto;				/*margin*/
+	padding: 20px 30px 20px 20px;	/*padding*/
+	width: 50%;						/*width*/
+	min-width: 900px;				/*min width*/
+	background-color: #ffffff;		/*background color*/
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);	/*backgrund image*/
+	border: 2px solid #009926;														 /*border*/
+	border-radius: 8px;	/*border radius*/
+	box-shadow: 0px 0px 90px 2px #008020;		/*box shadow*/
+}
+
+p {
+	margin: 20px 0px;		/*margin*/
+}
+
+a {
+	color: #008020; 		/*color*/
+}
+
+a:link, a:visited { 
+	text-decoration: none; 	/*text decoration*/
+}
+
+a:hover, a:focus { 					/*hover*/
+    text-decoration: underline; 	/*text decoration*/
+}
+
+/* Header */
+header {
+	height: 160px;			/*Height*/
+	border-bottom: 2px solid #e8b417;	/*border bottom*/
+}
+	
+header img { 
+	float: left; 		/*float of image*/
+} 
+
+header div#header-line-1 {
+	font-size: 300%;		/*font size*/
+	font-weight: bold;		/*font weight*/
+	text-align: right;		/*text align*/
+	color: #ecc03b;		/*color*/
+	text-shadow: 2px 2px 2px black;	/*text shadow*/
+}
+
+header div#header-line-2 {
+	font-size: 130%;		/*font size*/
+	font-weight: bold;		/*font weight*/
+	text-align: right;		/*text align*/
+	font-style: italic;		/*font style*/
+	color: #008020;		/*color*/
+}
+
+/* aside */
+aside {
+	width: 230px;		/*width*/
+	float: left;		/*float*/
+	margin: 30px 10px 0px 0px; /*margin*/
+}
+
+aside div.sidebar-title {
+	font-size: 115%;		/*font size*/
+	font-weight: bold;		/*font weight*/
+	color: #d1a215;		/*color*/
+}
+
+aside ul {
+	margin: 15px 0px 0px 15px;		/*margin*/
+}
+
+aside ul li {
+	margin: 15px 0px 0px 0px;	/*margin*/
+}
+
+aside ul li a{
+	font-style: italic;	/*font-style*/
+	font-size: 90%;		/*font-size*/
+}
+
+/* Main */
+main {
+	margin: 20px 0;		/*margin*/
+	padding-left: 20px;	/*Padding*/
+	float: left;		/*float*/
+	width: 638px;		/*width*/
+	min-height: 600px;	/*min-height*/
+	border-left: 2px solid #e8b417;	/*border-left*/
+}
+
+main h1 { 
+	margin: 0;			/*margin*/
+	font-size: 200%;	/*font-size*/
+}
+
+main h1:first-letter { 
+	font-size: 240%;	/*font-size*/
+}
+
+main h2 {
+	margin: 25px 0px;		/*margin*/
+	font-size: 125%;		/*font-size*/
+}
+
+main h3 {	
+	font-size: 110%;		/*font-size*/
+}
+
+main ul#product-categories {
+	list-style-type: none;		/*list style type*/
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;			/*margin*/
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;			/*margin-top*/
+}
+
+main ul#product-categories p{
+	margin-top: 5px;			/*margin-top*/
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;		/*border*/
+	border-radius: 10px;			/*border radius*/
+	box-shadow: 0px 0px 6px 2px #ecc03b;	/*box shadow*/
+}	
+
+/* the styles for the form */
+fieldset {
+    margin-top: 0.75em;		/*margin-top*/
+    margin-bottom: 0.75em;	/*margin bottom*/
+    padding-top: .5em;		/*padding top*/
+}
+
+legend{
+	color: grey;		/*color*/
+	font-size: 85%;		/*font size*/
+    font-weight: bold;	/*font weight*/
+	margin-bottom: .5em;	/*margin bottom*/
+} 
+
+label, input, select {
+	font-size: 90%;		/*font size*/
+}
+
+label {
+    float: left;	/*float*/
+    width: 12em;	/*width*/
+    text-align: right;	/*text align*/
+}
+
+input, select{
+    width: 15em;	/*width*/
+    margin-left: .5em;	/*margin left*/
+    margin-bottom: .5em;	/*margin bottom*/
+}
+
+.radio_class{
+	float:none;		/*float*/
+}
+
+input[type="radio"]{
+	width: 1.50em;		/*width*/
+	margin-left: 3em;	/*margin left*/
+}
+
+.month_class{
+	width: 7em;	/*width*/
+}
+
+.year_class{
+	width: 5em;	/*width*/
+}
+
+input:required, input[required] {
+	border: 2px solid orange;	/*border*/
+}
+
+input:valid {
+	border: 1px solid black;	/*border*/
+}
+
+input[type="submit"] {
+	width: 10em;	/*width*/
+}
+
+input[type="reset"] {
+	width: 10em;	/*width*/
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;		/*margin top*/
+}
+
+#nav_menu ul {
+	list-style-type: none;	/*list of style types*/
+	position: relative;	/*position*/
+}
+
+#nav_menu ul li {
+	float: left;		/*float*/
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);	/*background image*/
+	width: 180px;			/*width*/
+	padding: 1em 0;		/*padding*/
+	display: block;		/*display*/
+    text-align: center;    /*text align*/
+    text-decoration: none;  /*text decoration*/
+	font-weight: bold;		/*font weight*/
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;	/*color*/
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	/*color*/
+	font-weight: bold;/*font weight*/
+}
+
+/* Footer */
+footer {
+	clear: left;		/*clear*/
+	border-top: 2px solid #e8b417; 	/*border top*/
+}
+
+footer p {		/*footer*/
+	font-size: 80%;	/*font size*/
+	text-align: center; /*text align*/
+}

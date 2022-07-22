@@ -1,0 +1,173 @@
+	<!DOCTYPE html>
+ <html lang="en">	<!--Language - English-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>					<!--Tittle - Event Tickets Order Form-->
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">	<!--normalize style sheet linked-->
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		<!--main style sheet linked-->
+	</head>
+
+	<body>
+		<form name="Order_form" action="place_order.html" method="post">
+			<input type="submit" value="submit">
+
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;"><!--ornament logo added-->
+				<div id="header-line-1">New Year Central</div><!--header line 1 addeed-->
+				<div id="header-line-2">For the child in all of us!</div><!--header line 2 added-->
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>											<!--index.html file linked-->
+					<li><a href="about_us.html">About Us</a></li>									<!--about_us.html file linked-->
+					<li><a href="products.html">Our Products</a></li>								<!--products.html file linked-->
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>	<!--tickets_order_form.html file linked-->
+					<li><a href="contact_us.html">Contact Us</a></li>								<!--contact_us.html file linked-->
+				</ul>	
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>							<!--Side bar title-->
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<h1>Order Event Tickets</h1>
+
+				<!-- The form starts here... -->
+				<form action="order_form" action="place_order.html" method="post">	<!--Form action and method-->
+
+					<fieldset>
+						<legend>Member Information</legend>							<!--legend Member informmation-->
+
+						<label for= "email">E-mail:</label>							<!--email label-->
+						<input type= "email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus><br>	<!-- Getting email input-->
+
+						<label for= "first_name">First Name:</label><!--first name lable-->
+						<input type= "text" name="first_name" id="first_name" required><br><!--Getting first name input-->
+
+						<label for= "last_name">Last Name:</label><!--lase name lable-->
+						<input type="text" name="last_name" id="last_name" required><br><!--Getting last name input-->
+
+						<label for= "address">Address:</label><!--address lable-->
+						<input type= "text" name="address" id="address"><br><!--Getting address input-->
+
+						<label for= "city">City:</label><!--city lable-->
+						<input type= "text" name="city" id="city" required><br><!--Getting city input-->
+
+						<label for= "province">Province:</label> <!--Province lable-->
+						<input type= "text" name="province" id="province" required pattern="[A-Za-z]{2}" title="Must a 2-letter code" placeholder=" 2-character code"><br> <!--Getting address input-->
+
+						<label for= "postal_code">Postal Code:</label> <!--Postal code lable-->
+						<input type= "text" name="postal_code" id="postal_code" required pattern="[A-Za-z0-9]{6, }" title="Must exactly 6 alphanumeric characters" placeholder="6 characters"><br> <!--Getting Postal code input-->
+
+						<label for= "phone">Phone Number:</label> <!--Phone number label-->
+						<input type= "tel" name="phone" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be in the 999-999-9999 format" placeholder="999-999-9999"> <!--Getting phone number input-->
+					</fieldset>
+					
+					<fieldset>
+
+						<legend>Ordering Information</legend>		<!--Legend - Ordering Information-->
+						<label for="events">Event:</label>			<!--lable of event-->
+
+						<select id="Order_events" name="order_events">		<!--Id and name of order event-->
+							<option value="Cookie" selected>Cookie Decoration Contest</option>	<!--Cookie - option of event-->
+							<option value="Tree">Tree Decoration Contest</option>				<!--Tree - option of event-->
+							<option value="Gift">Gift of Light Ride-Along</option>				<!--Gift - option of event-->
+							<option value="Breakfast">Breakfast with Santa</option>				<!--Breakfast - option of event-->
+						</select><br>
+					
+						<label for="Order">Order Type:</label>
+
+						<select id="Order_type" name="Order_type">				<!--id and name-->
+							<option value="Member Package" selected>Member Package</option>	<!--Member pakage - order type-->
+							<option value="Donor">Donor Package</option>					<!--Donor - order type-->
+							<option value="Single">Single Tickets</option>					<!--Single - order type-->
+						</select><br>
+					
+						<label for="tickets">Number Of Tickets:</label>
+						<input type="number" name="tickets" id="tickets" title="Must be a number only" placeholder="Number of single tickets"><br> <!--Pattern of getting input-->
+
+					</fieldset>			<!--Closing fieldset-->
+					
+					<fieldset>
+
+						<legend>Payment Method</legend>			<!--legend of payment method-->
+						<input type="radio" id="Bill" name="method" value="Bill Me"> <!--details of input-->
+						
+						<label for="bill" class="radio_class">Bill Me</label><!-- label -->
+						<input type="radio" id="Credit" name="method" value="Credit Card">	<!--Getting input-->
+
+						<label for="credit" class="radio_class">Credit Card</label>			<!--label of credit card option-->
+
+					</fieldset>
+					
+					<fieldset>
+
+						<legend>Credit Card Information</legend>					<!--Legend of credit card infromation-->
+						<label for="card">Card Type:</label>						<!--Label of credit card-->
+
+						<select id="card" name="card">								<!--Showing id and name-->
+							<option value="Visa" selected>Visa</option>				<!--option of getting payment by visa-->
+							<option value="Master">Master Card</option>				<!--option of getting payment by master card-->
+							<option value="Discover">Discover</option>				<!--option of getting payment by discover-->
+						</select><br>
+
+						<label for="number">Card Number:</label>					<!--label -->
+						<input type="text" name="number" id="number" required pattern="^\d{4}-\d{4}-\d{4}-\d{4}$" title="Must be a 16-digit entry" placeholder="16 digits" ><br>
+						
+						<label for="months">Expiration Date:</label>
+
+						<select class="month_class" name="months" id="months">		<!--Month class-->
+							<option value="Jan" selected>January</option>	<!--Month option January-->
+							<option value="Feb">Febrauary</option>			<!--Month option Feb-->
+							<option value="Mar">March</option>				<!--Month option march-->
+							<option value="Apr">April</option>				<!--Month option apr-->
+							<option value="May">May</option>				<!--Month option may-->
+							<option value="June">June</option>				<!--Month option june-->
+							<option value="July">July</option>				<!--Month option july-->
+							<option value="Aug">August</option>				<!--Month option august-->
+							<option value="Sep">September</option>			<!--Month option sep-->
+							<option value="Oct">October</option>			<!--Month option oct-->
+							<option value="Nov">November</option>			<!--Month option nov-->
+							<option value="Dec">December</option>			<!--Month option dec-->
+				  		</select>
+
+						<select class="year_class" name="year" id="year">		<!--year class-->
+							<option value="2021" selected>2021</option>			<!--Year option first-->
+							<option value="2022">2022</option>					<!--Year option second-->
+							<option value="2023">2023</option>					<!--Year option third-->
+							<option value="2024">2024</option>					<!--Year option fourth-->
+							<option value="2025">2025</option>					<!--Year option fifth-->
+							<option value="2026">2026</option>					<!--Year option sixth-->
+							<option value="2027">2027</option>					<!--Year option seventh-->
+						</select><br>	<!--break-->
+
+					</fieldset>
+				
+					<fieldset>
+				  		<legend>Submit your Order </legend>			<!--legend of "Submit your order"-->
+						<label>&nbsp;</label>						<!--Non breaking space-->
+
+				  		<!-- The two buttons -->
+				  		<input type="submit" name="submit" value="Submit">		<!--Submit button-->
+				  		<input type="reset" name="reset" value="Reset">			<!--Reset button-->
+								
+			  		</fieldset>
+					
+		  		</form>
+			</main>
+			
+			<footer>			<!--Footer-->
+				<p>&copy; 2021 New Year Central. Created by Johnny White.</p>
+			</footer>			<!--Closing footer-->
+		</div>					<!--Closing division-->
+	</body>						<!--Closing body-->
+</html>							<!--Closing html-->
